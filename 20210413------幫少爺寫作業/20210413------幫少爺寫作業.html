@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: "Microsoft JhengHei", "Segoe UI",
+                    "Segoe MDL2 Assets", Verdana, sans-serif;
+            }
+
+            header {
+                width: 80%;
+                background-color: rgb(75, 89, 133);
+                border-radius: 30px 30px 0 0;
+                padding: 10px;
+                margin: auto;
+                display: flex;
+            }
+            .avatar {
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                border: #fff solid 3px;
+                margin-right: 10px;
+        
+            
+                
+            }
+            .logoLeft {
+                background-image: url(./img/img/seven.jpg);
+                background-position: center;
+                background-size: contain;
+          
+            }
+            .logoRight {
+                background-image: url(./img/img/witch.png);
+                background-size: cover;
+            }
+            .logoRight-2 {
+                background-image: url(./img/img/girl.png);
+                background-size: cover;
+            }
+
+
+
+            .logo {
+                width: 80px;
+                height: 80px;
+                border-radius: 50px;
+                border: #fff solid 3px;
+                background-color: black;
+                border-radius: 50px;
+                border: #fff solid 3px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                flex-shrink: 0;
+            }
+
+            .name {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .name h2,
+            h3 {
+                color: #fff;
+                width: 150px;
+                height: 5px;
+            }
+            .name h3 {
+                color: rgb(196, 192, 192);
+            }
+            .chat {
+                max-width: 45%;
+                height: auto;
+                padding: 5px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+
+            .chatLeft {
+                background-color: rgb(16, 213, 147);
+                padding: 10px;
+            }
+            .chatRight {
+                background-color: bisque;
+                margin-right: 10px;
+                padding: 10px;
+            }
+
+            .status {
+                background-color: rgb(85, 79, 79);
+                width: 60px;
+                height: 20px;
+            }
+
+            main {
+                width: 80%;
+                height: 70vh;
+                margin: auto;
+                background: linear-gradient(90deg, #57718b, #736097);
+
+
+            }
+
+            .content {
+                padding: 10px 0 0 10px;
+                display: flex;
+            }
+            .contentRight {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            footer {
+                width: 80%;
+                height: 10vh;
+                margin: auto;
+                background-color: rgb(99, 115, 150);
+                padding: 10px;
+                display: flex;
+            }
+
+            .chatting {
+                width: 80%;
+                height: 40px;
+                background-color: rgb(172, 172, 218);
+                border-radius: 30px;
+                margin-right: 10px;
+            }
+            .send {
+                background-color: rgb(134, 134, 149);
+                width: 10%;
+                height: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="all"></div>
+        <header>
+            <div class="logoLeft avatar"></div>
+            <div class="name">
+                <h2>憂鬱ㄟ少爺</h2>
+                <h3>可惡！！！！</h3>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <div class="logo logoLeft"></div>
+                <div class="chat chatLeft">
+                    為甚麼都沒有人可以讓我笑一下?
+                    <div class="time"></div>
+                </div>
+            </div>
+            <div class="content contentRight">
+                <div class="logo logoRight"></div>
+                <div class="chat chatRight">少爺息怒！我這就去準備幾個表演！！
+                    <div class="time"></div>
+                </div>
+            </div>
+            <div class="content contentRight">
+                <div class="logo logoRight logoRight-2"></div>
+                <div class="chat chatRight">
+                    (萊蓬首悠揚的歌聲)
+                    <div class="time"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="logo logoLeft"></div>
+                <div class="chat chatLeft">
+                    ......
+                    可惡
+                    <div class="time"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+           
+                <input
+                    type="text"
+                    class="chatting"
+                    placeholder="Type your message..."
+                />
+           
+            <button class="send"></button>
+        </footer>
+        <!-- <script>
+            var grd = main.createLinearGradient(0, 0, 175, 0);
+            grd.addColorStop(0, "black");
+            grd.addColorStop(1, "white");
+            main.fillStyle = grd; //填滿顏色
+            main.fillRect(0, 0, 175, 100);
+        </script> -->
+    </body>
+</html>
