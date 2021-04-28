@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAB</title>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-      <!--  defer 表示最後載入 可不用寫 -->
+    <!--  defer 表示最後載入 可不用寫 -->
     <style>
-        *{
+        * {
             font-family: '微軟正黑體';
         }
-        .btn{
+
+        .btn {
             width: 100px;
             height: 50px;
         }
-        .box{
+
+        .box {
             width: 308px;
             height: 200px;
             background-color: plum;
@@ -23,35 +26,126 @@
             align-items: center;
             justify-content: center;
         }
-        .btn{
+
+        .btn {
             background-color: gray;
             color: white;
         }
-        #box1{
+
+        #box1 {
             background-color: rgb(46, 189, 189);
         }
-        #box2{
+
+        #box2 {
             background-color: goldenrod;
         }
-        #box3{
+
+        #box3 {
             background-color: salmon;
         }
     </style>
 </head>
-<body x-data = "{ open:'btn1'}">
+
+<!-- 綁定函式寫法 -->
+
+<body x-data="setData()">
+    <img x-bind:src="imgs" alt="" :width="width"><br>
+    <!--  x-bind: 可省略為: <img :src="imgs" alt="" width="200"><br> -->
+    <!-- <button class="btn" @click="imgs = './p-2.jpg'">圖片</button> -->
+    <button class="btn" @click="changeImg()">圖片</button>
+    <button class="btn" @click.once="width=300">up</button>
+    <hr>
+
+
+    <!-- <div x-text="'THE SECTION YOU SELECTED:'+open"></div> -->
+    <div>目前選到的區塊是:<span x-text="currentBox"></span></div>
+    <template x-for="block in blocks" :key="block">
+        <button class="btn" @click="currentBox = block['block']" x-text="block['btn']"></button>
+    </template>
+    
+    <template x-for="block in blocks" :key="block">
+        <div :id="block['bn']" class="box" x-show="currentBox == block['block']" x-text="block['btn']"></div>
+    </template>
+
+    <!-- 屬性賦予變數 前方加: -->
+    
+    <button class="btn" @click="currentBox = 'btn1'">按鈕1</button>
+    <button class="btn" @click="currentBox = 'btn2'">按鈕2</button>
+    <button class="btn" @click="currentBox = 'btn3'">按鈕3</button>
+    <div id="box1" class="box" x-show.transition.in.duration.1000ms="currentBox =='btn1'">區塊一</div>
+    <div id="box2" class="box" x-show.transition.in.duration.1000ms="currentBox =='btn2'">區塊二</div>
+    <div id="box3" class="box" x-show.transition.in.duration.1000ms="currentBox =='btn3'">區塊三</div>
+    
+
+
+</body>
+
+<script>
+    function setData(params) {
+        return {
+            currentBox:' btn1 ',
+            imgs:'./p-1.jpg',
+            width:'200',
+            blocks:[
+                {
+                    btn:"按鈕A",
+                    block:"區塊一",
+                    bn:"box1"
+                },
+                {
+                    btn:"按鈕B",
+                    block:"區塊二",
+                    bn:"box2"
+                },
+                {
+                    btn:"按鈕C",
+                    block:"區塊三",
+                    bn:"box3"
+                }
+            ],
+            changeImg(){
+                // this表示該changeImg同層資料，後取子層之imgs
+                if(this.imgs=='./p-1.jpg'){
+                    console.log(1);
+                    this.imgs='./p-2.jpg'
+                }
+                else if(this.imgs=='./p-2.jpg'){
+                    console.log(2);
+                    this.imgs='./p-3.jpg'
+                }
+                else{
+                    console.log(3);
+                    this.imgs='./p-1.jpg'
+                }
+            }
+
+        }
+
+    }
+</script>
+
+<!-- 綁定純資料寫法 -->
+<!-- <body x-data = "{ open:'btn1'}">
     
 <div x-text = "'THE SECTION YOU SELECTED:'+open"></div>
+
 <div>目前選到的區塊是:<span x-text = "open"></span></div>
     <button class="btn" @click = "open = 'btn1'">按鈕1</button>
     <button class="btn" @click = "open = 'btn2'">按鈕2</button>
     <button class="btn" @click = "open = 'btn3'">按鈕3</button>
 
+    
     <div id="box1" class="box" x-show="open =='btn1'">區塊一</div>
     <div id="box2" class="box" x-show="open =='btn2'">區塊二</div>
-    <div id="box3" class="box" x-show="open =='btn3'">區塊三</div>
+    <div id="box3" class="box" x-show.transition.in.duration.200ms="open =='btn3'">區塊三</div>
+    <img x-bind:src="imgsrc" alt="" width="200">
+
+</body> -->
+
+<!-- x-on = @   -->
 
 
-    <!-- <div x-data="{ tab: 'foo' }">
+<!-- <div x-data="{ tab: 'foo' }">
         <button :class="{ 'active': tab === 'foo' }" @click="tab = 'foo'">Foo</button>
         <button :class="{ 'active': tab === 'bar' }" @click="tab = 'bar'">Bar</button>
     
@@ -59,5 +153,4 @@
         <div x-show="tab === 'bar'">Tab Bar</div>
     </div> -->
 
-</body>
 </html>
