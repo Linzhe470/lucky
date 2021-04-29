@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAB</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <!--  defer 表示最後載入 可不用寫 -->
+    <style>
+        * {
+            font-family: '微軟正黑體';
+            padding: 0;
+            margin: 0;
+        }
+
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+ 
+
+        .btn {
+            width: 900px;
+            height: 50px;
+            background-color: plum;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            background-color: plum;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+        }
+
+
+        .box1 {
+            background-color: rgb(46, 189, 189);
+        }
+
+        .box2 {
+            background-color: rgb(255, 200, 62);
+        }
+
+        .box3 {
+            background-color: salmon;
+        }
+    </style>
+</head>
+
+<body x-data="setData()">
+    <h1 class="btn box2">BMI計算機</h1>
+    <main>
+        <div class="box box1">
+            <p>身高:</p>
+            <input type="number" id="myHeight" x-model="height">
+            <p>cm</p>
+        </div>
+        <div class="box box3">
+            <p>體重:</p>
+            <input type="number" id="myWeight" x-model="weight">
+            <p>kg</p>
+        </div>
+
+        <div class="box" x-text="bmi()"></div>
+    </main>
+    <button class="btn box2" type="button" @click="clear()">清除</button>
+
+
+    <script>
+        function setData() {
+            return {
+                height: 0,
+                weight: 0,
+                bmi() {
+                    var ans = this.weight / ((this.height / 100) ** 2);
+                    return ans ? ans : 0
+                },
+                clear() {
+                    this.weight = 0,
+                        this.height = 0
+                },
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
