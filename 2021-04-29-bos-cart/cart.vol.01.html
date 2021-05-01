@@ -5,98 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boostrap-kart</title>
+    <title>bt-cart-1</title>
     <link rel="icon" href="./img/svg-export/p-logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
-    <style>
-        .navbar .barmenu ul li {
-            padding: 0 10px;
-        }
-
-        .jumbotron,
-        .jumbotron-fluid {
-            background-color: transparent;
-        }
-
-        .p-color {
-            color: #6366F1;
-        }
-
-        .pb-color {
-            background-color: #6366F1;
-        }
-
-        .container {
-            max-width: 1500px;
-            padding: 50px 0;
-        }
-
-        .card {
-            border: none;
-        }
-
-
-        .bg-faded {
-            background-color: #F3F4F6;
-            padding: 20px;
-            margin: 0;
-            border-radius: 18px;
-        }
-
-        .wb-color {
-            background-color: white;
-        }
-
-        .bb-color {
-            background-color: black;
-        }
-
-        .nav-link {
-            color: grey;
-        }
-
-        .barmenu .nav-item:hover {
-            background-color: #F3F4F6;
-            border-radius: 5px;
-        }
-
-        .goout {
-            text-align: center;
-            font-size: 26px;
-        }
-
-        .navbar .barmenu ul {
-            display: flex;
-            align-items: center;
-        }
-
-        .carousel-item {
-            height: calc(100vh - 100px);
-        }
-
-        .bg-gogo {
-            background-color: #6ee7b7;
-        }
-
-        .green-bar {
-            position: relative;
-            bottom: -25px;
-            z-index: 2;
-
-        }
-    </style>
+    <link rel="stylesheet" href="./css/cart.vol.01.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container p-2">
+        <div class="container p-1" style="width: 80%;">
+
 
             <!-- Just an image -->
             <a class="navbar-brand" href="https://lesson-bootstrap.dev-hub.io/" target="_blank">
@@ -165,71 +88,67 @@
 
 
     <main>
-        <section style="background-color: #D1D5DB;" class="p-5">
-            <div class="container d-flex justify-content-center align-items-center flex-column"
-                style="background-color: #f5f5f5;width: 60%;border-radius: 10px;box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.185);">
-
-                <div class="row pl-5 pr-5 d-flex justify-content-center align-items-center" style="width: 100%;">
-
-                    <div class="row d-flex justify-content-between align-items-center" style="width: 100%;">
-                        <h3 class="text-left mb-4" style="font-weight: 800;">購物車</h3>
+        <section style="background-color: #D1D5DB;" class="carts">
+            <div class="cart container d-flex justify-content-center align-items-center flex-column">
+                
+                <div class="row pl-5 pr-5 pt-0" style="width: 100%;">
+                    <div class="row d-flex justify-content-center align-items-start flex-column" style="width: 100%;">
+                        <h3 class="text-left" style="font-weight: 800;">購物車</h3>
                     </div>
+                </div>
+                
+                <div class="row pl-5 pr-5 mb-5 d-flex justify-content-center align-items-center" style="width: 100%;">
 
-                    <div class="green-bar row d-flex justify-content-around align-items-center" style="width: 80%;">
+                    <div class="pins row d-flex justify-content-between align-items-center">
 
-                        <div style="width: 40px"></div>
-                        <div class="progress" style="height: 8px;width: 24%;">
+                        <div class="pin d-flex justify-content-center align-items-center flex-column">
+                            <div class="p-1 mb-2 rounded-circle text-center d-flex justify-content-center align-items-center"
+                                style="background-color: #10b981;width: 40px;height: 40px;color: white;">1
+                            </div>
+                        </div>
+
+                        <div class="progress" >
                             <div class="progress-bar bg-gogo rounded-pill" role="progressbar" style="width: 40%"
                                 aria-valuenow="15" aria-valuemin="25" aria-valuemax="25">
                             </div>
                         </div>
-                        <div style="width: 40px"></div>
 
+                        <div class="pin d-flex justify-content-center align-items-center flex-column">
+                            <div class="p-1 mb-2 rounded-circle text-center d-flex justify-content-center align-items-center"
+                                style="background-color: #ffffff;width: 40px;height: 40px;color: black;">2</div>     
+                        </div>
 
-                        <div class="progress" style="height: 8px;width: 24%;">
+                        <div class="progress" >
                             <div class="progress-bar bg-gogo rounded-pill" role="progressbar" style="width: 0%"
                                 aria-valuenow="15" aria-valuemin="25" aria-valuemax="25">
                             </div>
                         </div>
-                        <div style="width: 40px"></div>
-                        <div class="progress" style="height: 8px;width: 24%;">
-                            <div class="progress-bar bg-gogo rounded-pill" role="progressbar" style="width: 0%"
-                                aria-valuenow="15" aria-valuemin="25" aria-valuemax="25">
-                            </div>
-                        </div>
-                        <div style="width: 40px"></div>
-                    </div>
 
-                    <div class="row d-flex justify-content-between align-items-center" style="width: 100%;">
-
-                        <div class="col-3 d-flex justify-content-center align-items-center flex-column">
-                            <div class="p-1 mb-2 rounded-circle text-center d-flex justify-content-center align-items-center"
-                                style="background-color: #10b981;width: 40px;height: 40px;color: white;">1
-                            </div>
-                            <p>確認購物車</p>
-                        </div>
-
-                        <div class="col-3 d-flex justify-content-center align-items-center flex-column">
-                            <div class="p-1 mb-2 rounded-circle text-center d-flex justify-content-center align-items-center"
-                                style="background-color: #ffffff;width: 40px;height: 40px;color: black;">2</div>
-                            <p>付款與運送方式</p>
-                        </div>
-
-                        <div class="col-3 d-flex justify-content-center align-items-center flex-column">
+                        <div class="pin d-flex justify-content-center align-items-center flex-column">
                             <div class="p-1 mb-2 rounded-circle text-center d-flex justify-content-center align-items-center"
                                 style="background-color: #ffffff;width: 40px;height: 40px;color: black;">3</div>
-                            <p>填寫資料</p>
+    
                         </div>
 
-                        <div class="col-3 d-flex justify-content-center align-items-center flex-column">
+                        <div class="progress" >
+                            <div class="progress-bar bg-gogo rounded-pill" role="progressbar" style="width: 0%"
+                                aria-valuenow="15" aria-valuemin="25" aria-valuemax="25">
+                            </div>
+                        </div>
+
+                        <div class="pin d-flex justify-content-center align-items-center flex-column">
                             <div class="p-1 mb-2 rounded-circle text-center d-flex justify-content-center align-items-center"
                                 style="background-color: #ffffff;width: 40px;height: 40px;color: black;">4</div>
-                            <p>完成訂購</p>
                         </div>
 
                     </div>
                 </div>
-                <div style="border-top: 1px solid rgb(209, 208, 208);width: 94%;"></div>
+
+
+
+                <div style="border-top: 1px solid rgb(230, 230, 230);margin-top: 20px;margin-bottom: 20px;width:94%;">
+                </div>
+
                 <div class="row pl-5 pr-5 pt-3" style="width: 100%;">
                     <div class="row d-flex justify-content-center align-items-start flex-column" style="width: 100%;">
                         <h4 class="text-left" style="font-weight: normal;">訂單明細</h4>
@@ -239,12 +158,12 @@
                 <div class="container p-0 pt-3 pl-5 pr-5">
                     <div class="row d-flex justify-content-between align-items-center">
 
-                        <div class="col-8 d-flex align-items-center">
+                        <div class="col-8 d-flex align-items-start">
                             <img src="./img/svg-export/svgexport-9.svg" class="card-img-top mr-3" alt="..."
                                 style="width: 60px;background-color: #E0E7FF;border-radius: 50%;padding: 20px;">
-                            <div class="text-right d-flex justify-content-start align-items-center flex-column">
-                                <h4>123</h4>
-                                <p>123</p>
+                            <div class="text-left d-flex justify-content-start align-items-start flex-column">
+                                <h4>醬燒雞翅</h4>
+                                <p>#微辣</p>
                             </div>
                         </div>
 
@@ -261,12 +180,12 @@
                     </div>
                     <div class="row d-flex justify-content-between align-items-center">
 
-                        <div class="col-8 d-flex align-items-center">
+                        <div class="col-8 d-flex align-items-start">
                             <img src="./img/svg-export/svgexport-9.svg" class="card-img-top mr-3" alt="..."
                                 style="width: 60px;background-color: #E0E7FF;border-radius: 50%;padding: 20px;">
-                            <div class="text-right d-flex justify-content-start align-items-center flex-column">
-                                <h4>123</h4>
-                                <p>123</p>
+                            <div class="text-left d-flex justify-content-start align-items-start flex-column">
+                                <h4>醬燒雞翅</h4>
+                                <p>#微辣</p>
                             </div>
                         </div>
 
@@ -283,12 +202,12 @@
                     </div>
                     <div class="row d-flex justify-content-between align-items-center">
 
-                        <div class="col-8 d-flex align-items-center">
+                        <div class="col-8 d-flex align-items-start">
                             <img src="./img/svg-export/svgexport-9.svg" class="card-img-top mr-3" alt="..."
                                 style="width: 60px;background-color: #E0E7FF;border-radius: 50%;padding: 20px;">
-                            <div class="text-right d-flex justify-content-start align-items-center flex-column">
-                                <h4>123</h4>
-                                <p>123</p>
+                            <div class="text-left d-flex justify-content-start align-items-start flex-column">
+                                <h4>醬燒雞翅</h4>
+                                <p>#微辣</p>
                             </div>
                         </div>
 
@@ -304,25 +223,26 @@
                         </div>
                     </div>
                     <div class="container p-0 m-0">
+                      
                         <div class="row p-0">
-                            <div class="col-9"></div>
-                            <div class="col-1">數量:</div>
-                            <div class="col-2 text-right p-0">3</div>
+                            <div class="col-xl-9 col-8"></div>
+                            <div class="col-xl-1 col-2">數量:</div>
+                            <div class="col-xl-2 col-2 text-right p-0">3</div>
                         </div>
                         <div class="row p-0">
-                            <div class="col-9"></div>
-                            <div class="col-1">小計:</div>
-                            <div class="col-2 text-right p-0">$24.90</div>
+                            <div class="col-xl-9 col-8"></div>
+                            <div class="col-xl-1 col-2">小計:</div>
+                            <div class="col-xl-2 col-2 text-right p-0">$24.80</div>
                         </div>
                         <div class="row p-0">
-                            <div class="col-9"></div>
-                            <div class="col-1">運費:</div>
-                            <div class="col-2 text-right p-0">$24.90</div>
+                            <div class="col-xl-9 col-8"></div>
+                            <div class="col-xl-1 col-2">運費:</div>
+                            <div class="col-xl-2 col-2 text-right p-0">$24.80</div>
                         </div>
                         <div class="row p-0">
-                            <div class="col-9"></div>
-                            <div class="col-1">總計:</div>
-                            <div class="col-2 text-right p-0">$24.90</div>
+                            <div class="col-xl-9 col-8"></div>
+                            <div class="col-xl-1 col-2">總計:</div>
+                            <div class="col-xl-2 col-2 text-right p-0">$24.90</div>
                         </div>
 
                         <div
@@ -332,16 +252,16 @@
 
                     </div>
                     <div class="container d-flex justify-content-between" style="padding: 0;">
-                            <a href="#" class="btn p-color"><i class="fal fa-arrow-left"></i> Learn More</a>
-                            <button type="button" class="btn btn-primary btn-lg pb-color"
-                                style="padding: 6px 30px;">Button</button>
-                        </div>
-
-
+                        <a href="./boostrap-homepage.html" class="btn p-color"><i class="fal fa-arrow-left"></i> Homepage</a>
+                        <a href="./cart.vol.02.html"><button type="button" class="btn btn-primary btn-lg pb-color"
+                            style="padding: 6px 30px;">Next</button></a>
                     </div>
 
 
                 </div>
+
+
+            </div>
 
             </div>
 
@@ -352,91 +272,30 @@
     </main>
 
 
-    <!-- <div class="col-12">
-        <div class=" text-left border-0">
-
-            <h1 class="font-weight-blad mt-3">購物車</h1>
-            <table class="container d-flex justify-content-center align-items-center">
-                <tr class="text-center ">
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                </tr>
-
-                <tr class="text-center">
-                    <td>確認購物車</td>
-                    <td>付款與運送方式</td>
-                    <td>填寫資料</td>
-                    <td>完成訂購</td>
-                </tr>
-            </table>
-
-            <hr>
-
-            <h3 class="font-weight-normal mt-3">訂單明細</h3>
-
-            <div class="mt-4 d-flex justify-content-start align-items-center">
-                <div class="row">
-                    <div class="col-8 d-flex">
-                        <img src="./img/svg-export/svgexport-9.svg" class="card-img-top  " alt="..."
-                            style="width: 80px;background-color: #E0E7FF;border-radius: 50%;padding: 20px;">
-                            <div class="d-flex justify-content-center  flex-column">
-                                <h6 class="text-left ml-3">
-                                    NICECAKE
-                                </h6>
-                                <p class="text-left ml-3">
-                                    pick some special milk
-                                </p>
-                            </div>
-                    </div>
-                    <div class="col-4">
-                        -1+$10.50
-                    </div>
-
-
-                </div>
-
-
-
-
-            </div>
-
-            <hr>
-
-
-            <p class="text-center">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan <br>
-                taxidermy. Gastropub indxgo juice poutine, ramps microdosing<br>
-                banh mi pug VHS try-hard.
-            </p>
-            <a href="#" class="btn p-color"><i class="fal fa-arrow-left"></i> Learn More</a>
-
-        </div>
-    </div> -->
 
     <footer>
         <div class="container">
-            <div class="row ">
+            <div class="row p-2  d-flex flex-md-row flex-column align-items-center justify-content-center ">
+               
                 <div class="col-3">
-                    <div class="container p-0">
 
-                        <div class=" d-flex align-items-center justify-content-start mb-2">
+                    <div class="container p-0 flex-column d-flex align-items-md-start align-items-center justify-content-center" >
 
+                        <div class=" d-flex align-items-center justify-content-center mb-2 ">
                             <img src="./img/svg-export/svgexport-20.svg" alt="...">
-
                             <h5 class="card-title m-0 ml-3">數位方塊</h5>
-
                         </div>
 
                         <div>
                             <p>Air plant banjo lyft occupy retro adaptogen indego</p>
                         </div>
+                        
                     </div>
 
                 </div>
 
-                <div class="col-8 d-flex justify-content-between">
+
+                <div class="col-9 d-flex justify-content-between ">
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link disabled font-weight-blad" href="#" tabindex="-1" aria-disabled="true"

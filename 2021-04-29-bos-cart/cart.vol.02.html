@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt-cart-2</title>
+    <link rel="icon" href="./img/svg-export/p-logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/cart.vol.01.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container p-1" style="width: 80%;">
+
+
+            <!-- Just an image -->
+            <a class="navbar-brand" href="https://lesson-bootstrap.dev-hub.io/" target="_blank">
+                <img src="./img/svg-export/svgexport-1.svg" width="80%" height="" alt="">
+            </a>
+
+            <div class="barmenu ">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                Blog
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"> Portfolio
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"> About
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Link#1</a>
+                                <a class="dropdown-item" href="#">Link#2</a>
+                                <a class="dropdown-item" href="#">Link#3</a>
+
+                            </div>
+
+                        </li>
+                        <li class="nav-item active goout">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active goout">
+                            <a class="nav-link" href="#"><i class="fas fa-user-circle"></i> <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+    </nav>
+
+
+
+
+    <main>
+        <section style="background-color: #D1D5DB;" class="carts">
+            <div class="cart container d-flex justify-content-center align-items-center flex-column">
+
+                <div class="row pl-5 pr-5 pt-0" style="width: 100%;">
+                    <div class="row d-flex justify-content-center align-items-start flex-column" style="width: 100%;">
+                        <h3 class="text-left" style="font-weight: 800;">購物車</h3>
+                    </div>
+                </div>
+
+                <div class="row pl-5 pr-5 mb-5 d-flex justify-content-center align-items-center" style="width: 100%;">
+
+                    <div class="pins row d-flex justify-content-between align-items-center">
+
+                        <div class="pin d-flex justify-content-center align-items-center flex-column">
+                            <div class="p-1 mb-2 rounded-circle text-center d-flex justify-content-center align-items-center"
+                                style="background-color: #10b981;width: 40px;height: 40px;color: white;">1
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar bg-gogo rounded-pill" role="progressbar" style="width: 100%"
+                                aria-valuenow="15" aria-valuemin="25" aria-valuemax="25">
+                            </div>
+                        </div>
+
+                        <div class="pin d-flex justify-content-center align-items-center flex-column">
+                            <div class="p-1 mb-2 rounded-circle text-center d-flex justify-content-center align-items-center"
+                                style="background-color: #10b981;width: 40px;height: 40px;color: white;">2
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar bg-gogo rounded-pill" role="progressbar" style="width: 40%"
+                                aria-valuenow="15" aria-valuemin="25" aria-valuemax="25">
+                            </div>
+                        </div>
+
+                        <div class="pin d-flex justify-content-center align-items-center flex-column">
+                            <div class="p-1 mb-2 rounded-circle text-center d-flex justify-content-center align-items-center"
+                                style="background-color: #ffffff;width: 40px;height: 40px;color: black;">3</div>
+
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar bg-gogo rounded-pill" role="progressbar" style="width: 0%"
+                                aria-valuenow="15" aria-valuemin="25" aria-valuemax="25">
+                            </div>
+                        </div>
+
+                        <div class="pin d-flex justify-content-center align-items-center flex-column">
+                            <div class="p-1 mb-2 rounded-circle text-center d-flex justify-content-center align-items-center"
+                                style="background-color: #ffffff;width: 40px;height: 40px;color: black;">4</div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div style="border-top: 1px solid rgb(230, 230, 230);margin-top: 20px;margin-bottom: 20px;width:94%;">
+                </div>
+
+                <div class="row pl-5 pr-5 pt-3" style="width: 100%;">
+                    <div class="row d-flex justify-content-center align-items-start flex-column" style="width: 100%;">
+                        <h4 class="text-left" style="font-weight: normal;">
+                            付款方式
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="container p-0 pt-3 pl-5 pr-5">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-12 d-flex align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    信用卡付款
+                                </label>
+                            </div>
+                        </div>
+                        <div
+                            style="border-top: 1px solid rgb(230, 230, 230);margin-top: 20px;margin-bottom: 20px;width:96%;">
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-12 d-flex align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+
+                                    網路 ATM
+                                </label>
+                            </div>
+                        </div>
+                        <div
+                            style="border-top: 1px solid rgb(230, 230, 230);margin-top: 20px;margin-bottom: 20px;width:96%;">
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-12 d-flex align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    超商代碼
+                                </label>
+                            </div>
+                        </div>
+                        <div
+                            style="border-top: 1px solid rgb(230, 230, 230);margin-top: 20px;margin-bottom: 40px;width:100%;">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row pl-5 pr-5 pt-3" style="width: 100%;">
+                    <div class="row d-flex justify-content-center align-items-start flex-column" style="width: 100%;">
+                        <h4 class="text-left" style="font-weight: normal;">運送方式</h4>
+                    </div>
+                </div>
+
+                <div class="container p-0 pt-3 pl-5 pr-5">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-12 d-flex align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios3"
+                                    value="option3" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    黑貓宅配
+                                </label>
+                            </div>
+                        </div>
+                        <div
+                            style="border-top: 1px solid rgb(230, 230, 230);margin-top: 20px;margin-bottom: 20px;width:96%;">
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-12 d-flex align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios4"
+                                    value="option4" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    超商店到店
+                                </label>
+                            </div>
+                        </div>
+                        <div
+                            style="border-top: 1px solid rgb(230, 230, 230);margin-top: 20px;margin-bottom: 20px;width:96%;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container p-0 pt-3 pl-5 pr-5">
+                    <div class="container p-0 m-0">
+
+                        <div class="row p-0">
+                            <div class="col-xl-9 col-8"></div>
+                            <div class="col-xl-1 col-2">數量:</div>
+                            <div class="col-xl-2 col-2 text-right p-0">3</div>
+                        </div>
+                        <div class="row p-0">
+                            <div class="col-xl-9 col-8"></div>
+                            <div class="col-xl-1 col-2">小計:</div>
+                            <div class="col-xl-2 col-2 text-right p-0">$24.80</div>
+                        </div>
+                        <div class="row p-0">
+                            <div class="col-xl-9 col-8"></div>
+                            <div class="col-xl-1 col-2">運費:</div>
+                            <div class="col-xl-2 col-2 text-right p-0">$24.80</div>
+                        </div>
+                        <div class="row p-0">
+                            <div class="col-xl-9 col-8"></div>
+                            <div class="col-xl-1 col-2">總計:</div>
+                            <div class="col-xl-2 col-2 text-right p-0">$24.90</div>
+                        </div>
+
+                        <div
+                            style="border-top: 1px solid rgb(230, 230, 230);margin-top: 20px;margin-bottom: 20px;width: 100%;">
+                        </div>
+                    </div>
+
+
+                    <div class="container p-0 pt-3 pl-5 pr-5">
+
+                        <div class="container d-flex justify-content-between" style="padding: 0;">
+                            <a href="./cart.vol.01.html"><button type="button" class="btn btn-primary btn-lg pbr-color"
+                                    style="padding: 6px 30px;">Back</button></a>
+                            <a href="./cart.vol.03.html"><button type="button" class="btn btn-primary btn-lg pb-color"
+                                    style="padding: 6px 30px;">Next</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row p-2  d-flex flex-md-row flex-column align-items-center justify-content-center ">
+
+                <div class="col-3">
+
+                    <div
+                        class="container p-0 flex-column d-flex align-items-md-start align-items-center justify-content-center">
+
+                        <div class=" d-flex align-items-center justify-content-center mb-2 ">
+                            <img src="./img/svg-export/svgexport-20.svg" alt="...">
+                            <h5 class="card-title m-0 ml-3">數位方塊</h5>
+                        </div>
+
+                        <div>
+                            <p>Air plant banjo lyft occupy retro adaptogen indego</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-9 d-flex justify-content-between ">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled font-weight-blad" href="#" tabindex="-1" aria-disabled="true"
+                                style="color: black;">CATEGORIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">First Link
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Second Link
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Third Link
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fourth Link
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled font-weight-blad" href="#" tabindex="-1" aria-disabled="true"
+                                style="color: black;">CATEGORIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">First Link
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Second Link
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Third Link
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fourth Link
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled font-weight-blad" href="#" tabindex="-1" aria-disabled="true"
+                                style="color: black;">CATEGORIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">First Link
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Second Link
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Third Link
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fourth Link
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link disabled font-weight-blad" href="#" tabindex="-1" aria-disabled="true"
+                                style="color: black;">CATEGORIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">First Link
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Second Link
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Third Link
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fourth Link
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container-fluid" style="background-color:lightgray;">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <p>© 2020 Tailblocks — @knyttneve</p>
+                    <div>
+                        <img src="./img/svg-export/svgexport-21.svg" alt="...">
+                        <img src="./img/svg-export/svgexport-22.svg" alt="...">
+
+                        <img src="./img/svg-export/svgexport-23.svg" alt="...">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
