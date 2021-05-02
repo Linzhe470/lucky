@@ -1,3 +1,4 @@
+
 .navbar .barmenu ul li {
     padding: 0 10px;
 }
@@ -371,6 +372,16 @@ li {
 @media screen and (max-width:1200px) {
     .gotlost {
         display: none;
+    }
+    footer{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:620px) {
+    .progress{
+        width: 15% !important;
     }
 
 }

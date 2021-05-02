@@ -353,5 +353,14 @@ li {
   .gotlost {
     display: none;
   }
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .progress {
+    width: 15% !important;
+  }
 }
 /*# sourceMappingURL=cart.vol.01.css.map */
